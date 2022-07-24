@@ -1,9 +1,9 @@
 import { ActionType } from "../action/constants/action-type";
 
 const initialState ={
-    todo: [ {title:"Design- App", description:"Modifying Career, Scholarship and Entrance exam screen Acc to new design pattern "}],
-    inProgressTodo:[{title:"Frontend", description:"As a Content Annotator, I should be able add tags in colleges, So that colleges can improve"}],
-    completedTodo: [],
+    todo: [ {title:"Design- App", description:"Modifying Career, Scholarship and Entrance exam screen Acc to new design pattern", id:1}],
+    inProgressTodo:[{title:"Frontend", description:"As a Content Annotator, I should be able add tags in colleges, So that colleges can improve", id:1}],
+    completedTodo: [{title:"", description:""}],
 }
 
 export const todo = (state= initialState, {type, payload}) => {

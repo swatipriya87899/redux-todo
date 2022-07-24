@@ -14,3 +14,10 @@
     padding-left: 20px;
     border: none;
 }
+
+@media screen and (max-width: 660px) {
+    .search_bar{
+      width: 70px;
+    }
+
+  }

@@ -29,3 +29,18 @@
     color: #212121; 
     margin: 20px 20px;
 }
+
+.hamburger_icon{
+    display: none;
+}
+
+@media screen and (max-width: 660px) {
+    .todo_details{
+      width: 100%;
+    }
+    .hamburger_icon{
+        display: block;
+        margin-right: -35px;
+        margin-left: 20px;
+    }
+  }

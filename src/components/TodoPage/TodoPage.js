@@ -8,6 +8,7 @@ import Avatar from "../Avatar/Avatar";
 import Searchbox from "../Searchbox/Searchbox";
 import Sidebar from "../Sidebar/Sidebar";
 import avatar_group from "./../../images/avatar_group.png";
+import {GiHamburgerMenu} from 'react-icons/gi'
 import Todos from "../Todos/Todos";
 import "./TodoPage.css";
 
@@ -20,6 +21,7 @@ const TodoPage = () => {
     body:""
   });
  
+  const [sideBarInPhone, setSideBarInPhone] = useState(false)
 
   //add Todo
   const dispatch = useDispatch();
@@ -44,7 +46,6 @@ const TodoPage = () => {
   const handleInput = (name, value) => {
     setTodos({...todos, [name]:value});
     {console.log(todos)}
-  //  dispatch(addTodo(todos))
   }
 
 
@@ -53,6 +54,7 @@ const TodoPage = () => {
       <Sidebar></Sidebar>
       <div className="todo_details">
         <div className="todo_header">
+          <GiHamburgerMenu className="hamburger_icon"></GiHamburgerMenu>
           <Searchbox></Searchbox>
           <div className="avatar_group">
             <img src={avatar_group}></img>
